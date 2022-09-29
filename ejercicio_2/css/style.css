@@ -1,0 +1,10 @@
+header,
+nav,
+section,
+aside,
+footer {
+    border-radius: 20px;
+    border: solid #5087D6 1px;
+    text-align: center;
+}
+div{display: flex;} 
