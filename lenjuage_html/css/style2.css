@@ -1,2 +1,5 @@
 header, div, nav, footer {border-radius: 10px;}
 body{background-color:#75C9B7; text-align: center;}
+header{background-color:#322E2F;padding-bottom: 10px;}
+h1{color:#C7DDCC}
+nav{background-color:#C7DDCC;justify-content: space-between; display: flex; padding-left: 50px; padding-right: 50px;}
