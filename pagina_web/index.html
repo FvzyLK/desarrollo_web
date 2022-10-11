@@ -7,9 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        a{
+        a {
             margin-left: 20px;
-            
+        }
+        .grid-letras {
+            color: #FFFFFF;
+            display: grid;
+            grid-template-columns: auto auto auto; height: 246px;
+        }
+
+        #uno {
+            grid-column: 1 / 4;
+            text-align: left;
+        }
+
+        #dos {
+            grid-column: 2 / 3
+        }
+
+        #tres {
+            grid-column: 3/4;
+            grid-row: 2/4;
+        }
+
+        #cuatro {
+            grid-column: 3/4;
+            grid-row: 4/5;
         }
     </style>
 </head>
@@ -19,17 +42,23 @@
         <img src="img/logo (1).svg" alt="">
     </div>
     <div style="text-align: right;">
-        <img src="img/hero-vector.svg" alt="">
-        <nav> 
+
+        <nav>
             <a href="https://cdmx.gob.mx/" target="_blank">Residentes</a>
-            <a href="https://siapem.cdmx.gob.mx/"target="_blank">Negocios</a>
-            <a href="https://mexicocity.cdmx.gob.mx/"target="_blank">Visitantes</a> 
-            <a href="https://gobierno.cdmx.gob.mx/"target="_blank">Gobierno</a>
+            <a href="https://siapem.cdmx.gob.mx/" target="_blank">Negocios</a>
+            <a href="https://mexicocity.cdmx.gob.mx/" target="_blank">Visitantes</a>
+            <a href="https://gobierno.cdmx.gob.mx/" target="_blank">Gobierno</a>
         </nav>
     </div>
     <section>
-        <div style="background-image:url(img/hero.jpg) ; height: 338px;"> 
-
+        <div style="background:url(img/hero.jpg) 100% / cover no-repeat; height: 338px; display: flex;">
+            <img src="img/hero-vector.svg" alt="" style="height: 67px;">
+            <div class="grid-letras">
+                <span id="uno">APRENDE A PROGRAMAR</span>
+                <span id="dos">EN LAS</span>
+                <span id="tres">ESCUELAS DE CÓDIGO</span>
+                <span id="cuatro">DE LA CDMX</span>
+            </div class="grid-letras">
         </div>
     </section>
 </body>
