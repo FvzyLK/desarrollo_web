@@ -10,56 +10,71 @@
         a {
             margin-left: 20px;
         }
+
+        span {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         .grid-letras {
             color: #FFFFFF;
             display: grid;
-            grid-template-columns: auto auto auto; height: 246px;
+            grid-template-columns: auto auto auto;
+            height: 246px;
         }
 
         #uno {
             grid-column: 1 / 4;
             text-align: left;
+            font-size: 40px;
+            font-weight: 900;
         }
 
         #dos {
-            grid-column: 2 / 3
+            grid-column: 2 / 3;
+            font-size: 35px;
+            margin: left 80px;
+            ;
+
         }
 
         #tres {
             grid-column: 3/4;
             grid-row: 2/4;
+            font-size: 80px;
+            font-weight: 900;
         }
 
         #cuatro {
             grid-column: 3/4;
             grid-row: 4/5;
+            font-size: 35px;
         }
     </style>
 </head>
 
 <body>
-    <div style="background-image:none;">
-        <img src="img/logo (1).svg" alt="">
+    <div style="background-image:none; border-bottom: solid 1px; color:#D3D3D3 ;">
+        <img src="img/logo (1).svg" alt="" style="margin-left:10% ; margin-top: 10px; margin-bottom: 10px;">
     </div>
-    <div style="text-align: right;">
+    <div style="text-align: right;margin-bottom: 10px;">
 
-        <nav>
+        <nav style="margin-right:10% ; margin-top: 10px; ">
             <a href="https://cdmx.gob.mx/" target="_blank">Residentes</a>
             <a href="https://siapem.cdmx.gob.mx/" target="_blank">Negocios</a>
             <a href="https://mexicocity.cdmx.gob.mx/" target="_blank">Visitantes</a>
             <a href="https://gobierno.cdmx.gob.mx/" target="_blank">Gobierno</a>
         </nav>
     </div>
-    <section>
-        <div style="background:url(img/hero.jpg) 100% / cover no-repeat; height: 338px; display: flex;">
-            <img src="img/hero-vector.svg" alt="" style="height: 67px;">
-            <div class="grid-letras">
-                <span id="uno">APRENDE A PROGRAMAR</span>
-                <span id="dos">EN LAS</span>
-                <span id="tres">ESCUELAS DE CÓDIGO</span>
-                <span id="cuatro">DE LA CDMX</span>
-            </div class="grid-letras">
-        </div>
+    <section style="background:url(img/hero.jpg) 100% / cover no-repeat;  height: 338px; display: flex;">
+            <div style="display: flex; margin-left: 150px; margin-top: 10px;">
+                <img src="img/hero-vector.svg" alt="" style="height: 67px;">
+                <div class="grid-letras">
+                    <span id="uno">APRENDE A PROGRAMAR</span>
+                    <span id="dos">EN LAS</span>
+                    <span id="tres">ESCUELAS <br> DE CÓDIGO</span>
+                    <span id="cuatro">DE LA CDMX</span>
+                </div>
+            </div>
     </section>
 </body>
 
