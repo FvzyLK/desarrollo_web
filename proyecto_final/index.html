@@ -13,25 +13,73 @@
             text-decoration: none;
             color: black;
             font-weight: 900;
-            
+
         }
-        .home{
-            background-color: #016241;
+
+        .home {
+            background-color: white;
             margin-bottom: 100px;
             margin-top: 15px;
         }
+
         a:visited {
             color: black;
+        }
+
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+            text-align: center;
+
+        }
+        .sect{
+            width: 50%;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .titulo {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #F3FBFB;
+            font-size: 48px;
+            text-align: center;
+            letter-spacing: 10px;
+            font-weight: 450;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: #F3FBFB;
+        }
+
+        .holi {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+
+        }
+
+        .art{font-family: Arial, Helvetica, sans-serif;
+            color: #F3FBFB;
+            font-size: 48px;
+            font-weight: 450;
+            text-align: center;
+            width: 60%;
+            
+        }
+        #a-aprender{
+            color: #F3FBFB;
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
-    <header style="background-color: blue;padding-top: 25px;">
+    <header style="background-color:white;padding-top: 25px;">
         <div style="margin-top: 25px; text-align: right; float: right;">
-            <button>Iniciar sesión</button><button>Registrate</button>
+            <button style="border-radius:15px ;">Iniciar sesión</button>
+            <a id="uno" href="" ;><button style="border-radius:15px ;margin-left: 15px;">Registrate</button></a>
         </div>
-        <nav style="background-color: aquamarine;">
+        <nav style="background-color:white;">
             <a class="home" href=""><img src="img/pngwing.com.png" alt="" width="40px"></a>
             <a href="">ARTE</a>
             <a href="">COLECCIONES</a>
@@ -39,20 +87,39 @@
         </nav>
     </header>
     <section style="background-color:#016241 ;">
-        <h1>
-            <p>UNA EXPERIENCIA</p>
-            <p>TOTALMENTE NUEVA</p>
-            <p>EN EL ARTE</p>
-            <p></p>
-            <p>UNA TRADICION MILENARIA NOS HA ACOMPAÑADO ATRAVÉS DE TODO</p>
-            <p style="lin">ESTE TIEMPO.</p>
-        </h1>
+        <p class="titulo">
+            UNA EXPERIENCIA <br>
+            TOTALMENTE NUEVA <br>
+            EN EL ARTE
+        </p>
+        <p style="font-family:Arial, Helvetica, sans-serif ;">Una tradición milenaria nos ha acompañado a través de todo</p>
+        <p style="font-family:Arial, Helvetica, sans-serif ;">este tiempo. <a id="a-aprender" href="">Aprende más...</a></p>
+
 
     </section>
-    <article>
+    <article style="background-color:#D40032 ;display: flex; margin-bottom: 20px;">
+        <img src="img/alebrijes-en-oaxaca-940x626.jpg" alt="" style="width: 50%;">
+        <div class="sect">
+            <p class="titulo">
+                ALEBRIJES <br>
+                MEXICANOS
+            </p>
+            <p style="font-family:Arial, Helvetica, sans-serif ; font-size: 20px;">Tallados en madera cumplen con las más</p>
+            <p style="font-family:Arial, Helvetica, sans-serif ; font-size: 20px;">altas exigencias en diseño.</p>
+            <button style="border-radius:10px ;">Haz tu pedido</button>
+        </div>
 
     </article>
-    <section>
+    <section style="background-color:#D40032 ; display: flex;">
+        <div class="sect">
+            <p class="titulo">
+                CREATUVUDAD E <br>
+                IMAGINACIÓN
+            </p>
+            <p style="font-family:Arial, Helvetica, sans-serif ; font-size: 20px;">Un sueño hecho realidad</p>
+            <button class="boton" style="border-radius:20px ; background-color:#D40032;color: #F3FBFB;border: solid #F3FBFB 1px;">Haz tu pedido</button>
+        </div>
+        <img src="img/nomadas6.jpg" alt="" style="width: 50%;">
 
     </section>
 </body>
