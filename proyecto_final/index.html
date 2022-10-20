@@ -7,6 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        header {
+            background-color: white;
+            padding-top: 25px;
+        }
+
+        #up {
+            margin-top: 25px;
+            text-align: right;
+            float: right;
+        }
+
+        nav {
+            background-color: white;
+        }
+
+        #down {
+            background-color: #016241;
+        }
+
         a {
             margin-left: 5px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
@@ -31,11 +50,14 @@
             text-align: center;
 
         }
-        .sect{
+
+        .sect {
             width: 50%;
             text-align: center;
-            margin-top: 50px;
+            margin-top: 126px;
         }
+
+        .hola {}
 
         .titulo {
             font-family: Arial, Helvetica, sans-serif;
@@ -44,6 +66,16 @@
             text-align: center;
             letter-spacing: 10px;
             font-weight: 450;
+        }
+
+        #p1 {
+            font-size: 20px;
+
+        }
+
+        #p2 {
+            font-family: Arial, Helvetica, sans-serif;
+
         }
 
         p {
@@ -58,70 +90,118 @@
 
         }
 
-        .art{font-family: Arial, Helvetica, sans-serif;
+        .art {
+            font-family: Arial, Helvetica, sans-serif;
             color: #F3FBFB;
             font-size: 48px;
             font-weight: 450;
             text-align: center;
             width: 60%;
-            
+
         }
-        #a-aprender{
+
+        #a-aprender {
             color: #F3FBFB;
             text-decoration: underline;
+        }
+
+        .boton {
+            border-radius: 15px;
+            border: solid #F3FBFB 1px;
+            color: #F3FBFB;
+            background-color: #D40032;
+            width: 120px;
+            height: 30px;
+        }
+
+        .boton:hover {
+            background-color: #F3FBFB;
+            color: #D40032;
+        }
+
+        .buton1 {
+            border-radius: 15px;
+            margin-left: 15px;
+            border: solid black 1px;
+            color: black;
+            background-color: #F3FBFB;
+            width: 120px;
+            height: 30px;
+        }
+
+        .buton1:hover {
+            background-color: black;
+            color: #F3FBFB;
+        }
+
+        article {
+            background-color: #D40032;
+            display: flex;
+            margin-top: 20px;
+    
         }
     </style>
 </head>
 
 <body>
-    <header style="background-color:white;padding-top: 25px;">
-        <div style="margin-top: 25px; text-align: right; float: right;">
-            <button style="border-radius:15px ;">Iniciar sesión</button>
-            <a id="uno" href="" ;><button style="border-radius:15px ;margin-left: 15px;">Registrate</button></a>
+    <header>
+        <div id="up">
+            <button class="buton1">Iniciar sesión</button>
+            <a id="uno" href="" ;><button class="buton1">Registrate</button></a>
         </div>
-        <nav style="background-color:white;">
+        <nav>
             <a class="home" href=""><img src="img/pngwing.com.png" alt="" width="40px"></a>
             <a href="">ARTE</a>
             <a href="">COLECCIONES</a>
             <a href="">CONÓCENOS</a>
         </nav>
     </header>
-    <section style="background-color:#016241 ;">
+    <section id="down">
         <p class="titulo">
             UNA EXPERIENCIA <br>
             TOTALMENTE NUEVA <br>
             EN EL ARTE
         </p>
-        <p style="font-family:Arial, Helvetica, sans-serif ;">Una tradición milenaria nos ha acompañado a través de todo</p>
-        <p style="font-family:Arial, Helvetica, sans-serif ;">este tiempo. <a id="a-aprender" href="">Aprende más...</a></p>
+        <p id="p2">Una tradición milenaria nos ha acompañado a través de todo</p>
+        <p id="p2">este tiempo. <a id="a-aprender" href="">Aprende más...</a></p>
 
 
     </section>
-    <article style="background-color:#D40032 ;display: flex; margin-bottom: 20px;">
+    <article>
         <img src="img/alebrijes-en-oaxaca-940x626.jpg" alt="" style="width: 50%;">
         <div class="sect">
             <p class="titulo">
                 ALEBRIJES <br>
                 MEXICANOS
             </p>
-            <p style="font-family:Arial, Helvetica, sans-serif ; font-size: 20px;">Tallados en madera cumplen con las más</p>
-            <p style="font-family:Arial, Helvetica, sans-serif ; font-size: 20px;">altas exigencias en diseño.</p>
-            <button style="border-radius:10px ;">Haz tu pedido</button>
+            <p class="titulo1" id="p1">Tallados en madera cumplen con las más</p>
+            <p class="titulo1" id="p1">altas exigencias en diseño.</p>
+            <button class="boton">Haz tu pedido</button>
         </div>
 
     </article>
-    <section style="background-color:#D40032 ; display: flex;">
+    <article>
         <div class="sect">
             <p class="titulo">
                 CREATUVUDAD E <br>
                 IMAGINACIÓN
             </p>
             <p style="font-family:Arial, Helvetica, sans-serif ; font-size: 20px;">Un sueño hecho realidad</p>
-            <button class="boton" style="border-radius:20px ; background-color:#D40032;color: #F3FBFB;border: solid #F3FBFB 1px;">Haz tu pedido</button>
+            <button class="boton">Haz tu pedido</button>
         </div>
         <img src="img/nomadas6.jpg" alt="" style="width: 50%;">
 
-    </section>
+    </article>
+    <footer style="margin-top:25px;>
+        <img class="im1" src="img/icons8-spotify-30.png" alt="">
+        <img class="im1" src="img/icons8-facebook-nuevo-30.png" alt="">
+        <img class="im1" src="img/icons8-pinterest-30.png" alt="">
+        <img class="im1" src="img/icons8-instagram-30.png" alt="">
+        <img class="im1" src="img/icons8-youtube-play-30.png" alt="">
+        <img class="im1" src="img/icons8-twitter-30.png" alt="">
+        <p style="color: black;text-align:left ;">Todos los derechos reservados al arte popular.
+        </p>
+    </footer>
 </body>
 
 </html>
